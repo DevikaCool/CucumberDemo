@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Greenkart Purchaase",
+        "description": "",
+        "id": "greenkart-functions;greenkart-purchaase",
+        "after": [
+          {
+            "result": {
+              "duration": 847667853,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.CloseBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52466276607,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on greenkart landing page",
+            "match": {
+              "location": "MyStepDefinition.user_is_on_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4600481910,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User searched for \"Cucumber\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 19
+                }
+              ],
+              "location": "MyStepDefinition.user_searched_for_vegetable(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 125414773,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"Cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "MyStepDefinition.results_are_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Greenkart Functions",
+    "description": "",
+    "id": "greenkart-functions",
+    "keyword": "Feature",
+    "uri": "Greenkart.feature"
+  }
+]
